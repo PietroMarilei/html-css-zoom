@@ -25,6 +25,10 @@ i {
     display: flex;
 }
 
+img {
+    max-width: 100%;
+}
+
 /*  #endregion utilities */
 
 /* #region header */
@@ -58,10 +62,20 @@ header i:nth-child(2) {
 /* #endregion header */
 
 /*  #region main */
+.all-thumbs {
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+}
+
 .user {
     position: relative;
-    justify-content: space-between;
+    justify-content: flex;
     margin: 5px;
+
+}
+
+.user img {
+    max-width: calc(100Vw / 7);
 }
 
 .speaker {
