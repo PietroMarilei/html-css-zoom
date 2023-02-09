@@ -6,8 +6,75 @@
     box-sizing: border-box;
 }
 
+body {
+    color: aliceblue;
+    background-color: black;
+
+    font-family: "Helvetica Now",
+        Helvetica,
+        Arial,
+        sans-serif;
+    ;
+}
+
+i {
+    color: aliceblue;
+}
+
+.d-flex {
+    display: flex;
+}
+
 /*  #endregion utilities */
 
+/* #region header */
+
+header {
+    padding: 0.5rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.speaker-view {
+    background-color: grey;
+    padding: 3px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+.speaker-view i {
+    padding-right: 5px;
+}
+
+header i:nth-child(2) {
+    background-color: grey;
+    padding: 5px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+/* si puó ottimizzare volendo */
+
+/* #endregion header */
+
 /*  #region main */
+.user {
+    position: relative;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.speaker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    background-color: rgba(128, 128, 128, 0.323);
+}
+
+
+
 
 /*  #endregion main */
+
+/* #region */
