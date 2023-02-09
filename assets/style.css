@@ -30,12 +30,17 @@ img {
 
 }
 
+.container {
+    width: 90%;
+    margin: auto;
+}
+
 /*  #endregion utilities */
 
 /* #region header */
 
 header {
-    padding: 0.5rem;
+    padding: 0.5rem 0 2rem 0;
     justify-content: flex-end;
     align-items: center;
     height: 50px;
@@ -67,7 +72,7 @@ header i:nth-child(2) {
 main {
     height: calc(100vh - 50px - 80px);
     /* ------------------------------------------------------------------------------------------togliere i px del footer */
-    overflow: scroll;
+    overflow-y: scroll;
     /* questo fa apparire la barra solo qua */
 }
 
@@ -104,6 +109,26 @@ main {
 footer {
     width: 100%;
     height: 80px;
+    align-items: center;
+    background-color: grey;
+    justify-content: space-between;
 }
+
+.left-icons-footer {
+    align-items: center;
+}
+
+.icon-footer-mute {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.center-icons-footer {
+
+    align-items: center;
+}
+
 
 /* #endregion footer */
