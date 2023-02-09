@@ -114,21 +114,32 @@ footer {
     justify-content: space-between;
 }
 
-.left-icons-footer {
-    align-items: center;
-}
 
-.icon-footer-mute {
+.icon-footer-pad {
     padding: 10px;
     flex-direction: column;
     align-items: center;
-
 }
 
-.center-icons-footer {
+.icon-footer-pad>i {
+    font-size: 25px;
+}
 
+.icons-footer {
     align-items: center;
 }
 
+#share {
+    color: rgb(69, 240, 69);
+}
+
+.left {
+    padding: 2rem;
+}
+
+.right {
+    color: red;
+    padding: 2rem;
+}
 
 /* #endregion footer */
