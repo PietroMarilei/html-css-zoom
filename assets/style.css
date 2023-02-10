@@ -15,6 +15,8 @@ body {
         Arial,
         sans-serif;
     ;
+    /* non é una rubata per tolgiere la scroll laterale, si usa*/
+    overflow: hidden;
 }
 
 i {
@@ -40,20 +42,20 @@ img {
 /* #region header */
 
 header {
-    padding: 0.5rem 0 2rem 0;
+    height: 50px;
     justify-content: flex-end;
     align-items: center;
-    height: 50px;
+
 }
 
-.speaker-view {
+.name-view {
     background-color: grey;
     padding: 3px;
     margin-right: 8px;
     border-radius: 5px;
 }
 
-.speaker-view i {
+.name-view i {
     padding: 5px;
 }
 
@@ -70,50 +72,48 @@ header i:nth-child(2) {
 
 /*  #region main */
 main {
-    height: calc(100vh - 50px - 80px);
-    /* ------------------------------------------------------------------------------------------togliere i px del footer */
-    overflow-y: scroll;
+    height: calc(100vh - 120px);
+    /* ------------------------------------------------------------------------------------------ perché appare comunque la scroll*/
+    overflow-y: auto;
     /* questo fa apparire la barra solo qua */
 }
 
-.all-thumbs {
-    justify-content: space-evenly;
+.partecipants {
+    justify-content: center;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 .user {
     position: relative;
-    justify-content: flex;
     padding: 5px;
     width: 200px;
 }
 
 
-.speaker {
+.name {
     position: absolute;
-    bottom: 5px;
-    /* come il padding */
-    left: 0;
+    bottom: 8px;
+    left: 4px;
     padding: 8px;
     background-color: rgba(128, 128, 128, 0.323);
+    border-radius: 5px;
 }
-
-
-
 
 /*  #endregion main */
 
-/* #region */
 
 /* #region footer */
 footer {
-    width: 100%;
-    height: 80px;
+    height: 70px;
     align-items: center;
     background-color: grey;
     justify-content: space-between;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
+/* colpa del footer la barra laterale */
 
 .icon-footer-pad {
     padding: 10px;
@@ -122,7 +122,7 @@ footer {
 }
 
 .icon-footer-pad>i {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .icons-footer {
